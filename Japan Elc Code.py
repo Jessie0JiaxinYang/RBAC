@@ -448,38 +448,63 @@ table = pd.read_excel(file_path,sheet_name=sheetName)
 data =  [["ELC", "2020", "11", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
 d202011 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
 
-# December
+#文件路径
+file_path = r'C:\Users\jiaxi\OneDrive\Desktop\RBAC 2021\Balance\balance\Japan\4-2020.xlsx'
+# Jan
+# 读取sheet的名字
+
+# Dec
 sheetName = '2020.12'
 table = pd.read_excel(file_path,sheet_name=sheetName)
 
 data =  [["ELC", "2020", "12", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
 d202012 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
 
+
 # Januray
 sheetName = '2021.1'
 table = pd.read_excel(file_path,sheet_name=sheetName)
-
 data =  [["ELC", "2021", "01", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
 d202101 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
-
 # Feburay
 sheetName = '2021.2'
 table = pd.read_excel(file_path,sheet_name=sheetName)
-
 data =  [["ELC", "2021", "02", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
 d202102 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
-
 # March
 sheetName = '2021.3'
 table = pd.read_excel(file_path,sheet_name=sheetName)
-
 data =  [["ELC", "2021", "03", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
 d202103 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
-'''
 
-###############3
-'''
-Output1 = [d201301, d201302, d201303, d201304, d201305, d201306, d201307, d201308, d201309, d201310, d201311, d201312, \
+
+#文件路径
+file_path = r'C:\Users\jiaxi\OneDrive\Desktop\RBAC 2021\Balance\balance\Japan\4-2021.xlsx'
+# Jan
+# 读取sheet的名字
+
+# April
+sheetName = '2021.4'
+table = pd.read_excel(file_path,sheet_name=sheetName)
+data =  [["ELC", "2021", "04", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
+d202104 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
+
+
+# May
+sheetName = '2021.5'
+table = pd.read_excel(file_path,sheet_name=sheetName)
+
+data =  [["ELC", "2021", "05", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
+d202105 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
+
+# June
+sheetName = '2021.6'
+table = pd.read_excel(file_path,sheet_name=sheetName)
+
+data =  [["ELC", "2021", "06", table.iloc[11,3]/1000000*1360 + table.iloc[18,3]/1000]]
+d202106 = pd.DataFrame(data,columns= ["sector", "year", "month", "value"])
+
+, d201306, d201307, d201308, d201309, d201310, d201311, d201312, \
            d201401, d201402, d201403, d201404, d201405, d201406, d201407, d201408, d201409, d201410, d201411, d201412, \
            d201501, d201502, d201503, d201504, d201505, d201506, d201507, d201508, d201509, d201510, d201511, d201512, \
            d201601, d201602, d201603, 
@@ -490,7 +515,7 @@ Output1 = [d201604, d201605, d201606, d201607, d201608, d201609, d201610, d20161
            d201801, d201802, d201803, d201804, d201805, d201806, d201807, d201808, d201809, d201810, d201811, d201812, \
            d201901, d201902, d201903, d201904, d201905, d201906, d201907, d201908, d201909, d201910, d201911, d201912, \
            d202001, d202002, d202003, d202004, d202005, d202006, d202007]
-    
+    d202012, d202101, d202102,d202103,d202104,d202105,d202106
 #, d202008 , d202009, d202010, d202011, d202012        ]
 
 Output2 = pd.concat(Output1)
